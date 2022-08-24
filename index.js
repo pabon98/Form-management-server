@@ -12,7 +12,6 @@ app.use(express.json())
 
 const uri = `mongodb+srv://formdb:cHpWuJRLE4ofqklR@cluster0.lzm3u.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-
 async function run(){
   try{
       await client.connect()
